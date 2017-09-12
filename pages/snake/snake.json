@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTitleText": "pm2.5贪吃蛇",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": false
+}

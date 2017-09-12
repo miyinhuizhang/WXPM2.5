@@ -1,0 +1,4 @@
+/* pages/snake/snake.wxss */
+page{
+    height: 100%
+}

@@ -1,0 +1,37 @@
+<!--index.wxml-->
+  <view class="container">
+  <view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker" id="{{city}}">
+      选择城市：{{array[index1]}}
+    </view>
+  </picker>
+</view>
+  <view class="type">
+    <text>空气质量:{{weatherType}}</text>
+  </view>
+  <view class="type">
+    <text>pm2.5指数:{{wenDu}}</text><text>μg/m3</text>
+  </view>
+  <view class="type">
+    <text>出行建议：适宜出行</text>
+  </view>
+  <view class="type">
+    <text>运动建议：适宜运动，但不要剧烈运动哦！</text>
+  </view>
+  <view class="type">
+    <text>各个监测点情况</text>
+  </view>
+  <view class="type">
+    <text></text>
+  </view>
+  <scroll-view scroll-x='true'>
+    <view wx:for="{{weatherList}}" class="forecast">
+      <view class="forecast">
+        <text class="date">{{item.site_name}}</text>
+        <text class="date">{{item.quality}}</text>
+        <text class="high">{{item.pm2_5}}μg/m3</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>
